@@ -106,6 +106,8 @@ namespace MemoryGame
                 {
                     PendingImage2 = null;
                     PendingImage1 = null;
+                    Card1.Enabled = false;
+                    DupCard1.Enabled = false;
                 }
                 else
                 {
@@ -132,6 +134,8 @@ namespace MemoryGame
                 {
                     PendingImage2 = null;
                     PendingImage1 = null;
+                    Card1.Enabled = false;
+                    DupCard1.Enabled = false;
                 }
                 else
                 {
@@ -158,6 +162,8 @@ namespace MemoryGame
                 {
                     PendingImage2 = null;
                     PendingImage1 = null;
+                    Card2.Enabled = false;
+                    DupCard2.Enabled = false;
                 }
                 else
                 {
@@ -184,6 +190,8 @@ namespace MemoryGame
                 {
                     PendingImage2 = null;
                     PendingImage1 = null;
+                    Card2.Enabled = false;
+                    DupCard2.Enabled = false;
                 }
                 else
                 {
@@ -210,6 +218,8 @@ namespace MemoryGame
                 {
                     PendingImage2 = null;
                     PendingImage1 = null;
+                    Card3.Enabled = false;
+                    DupCard3.Enabled = false;
                 }
                 else
                 {
@@ -236,6 +246,8 @@ namespace MemoryGame
                 {
                     PendingImage2 = null;
                     PendingImage1 = null;
+                    Card3.Enabled = false;
+                    DupCard3.Enabled = false;
                 }
                 else
                 {
@@ -262,6 +274,8 @@ namespace MemoryGame
                 {
                     PendingImage2 = null;
                     PendingImage1 = null;
+                    Card4.Enabled = false;
+                    DupCard4.Enabled = false;
                 }
                 else
                 {
@@ -288,6 +302,8 @@ namespace MemoryGame
                 {
                     PendingImage2 = null;
                     PendingImage1 = null;
+                    Card4.Enabled = false;
+                    DupCard4.Enabled = false;
                 }
                 else
                 {
@@ -314,6 +330,8 @@ namespace MemoryGame
                 {
                     PendingImage2 = null;
                     PendingImage1 = null;
+                    Card5.Enabled = false;
+                    DupCard5.Enabled = false;
                 }
                 else
                 {
@@ -340,6 +358,8 @@ namespace MemoryGame
                 {
                     PendingImage2 = null;
                     PendingImage1 = null;
+                    Card5.Enabled = false;
+                    DupCard5.Enabled = false;
                 }
                 else
                 {
@@ -366,6 +386,8 @@ namespace MemoryGame
                 {
                     PendingImage2 = null;
                     PendingImage1 = null;
+                    Card6.Enabled = false;
+                    DupCard6.Enabled = false;
                 }
                 else
                 {
@@ -392,6 +414,8 @@ namespace MemoryGame
                 {
                     PendingImage2 = null;
                     PendingImage1 = null;
+                    Card6.Enabled = false;
+                    DupCard6.Enabled = false;
                 }
                 else
                 {
@@ -418,6 +442,8 @@ namespace MemoryGame
                 {
                     PendingImage2 = null;
                     PendingImage1 = null;
+                    Card7.Enabled = false;
+                    DupCard7.Enabled = false;
                 }
                 else
                 {
@@ -444,6 +470,8 @@ namespace MemoryGame
                 {
                     PendingImage2 = null;
                     PendingImage1 = null;
+                    Card7.Enabled = false;
+                    DupCard7.Enabled = false;
                 }
                 else
                 {
@@ -470,6 +498,8 @@ namespace MemoryGame
                 {
                     PendingImage2 = null;
                     PendingImage1 = null;
+                    Card8.Enabled = false;
+                    DupCard8.Enabled = false;
                 }
                 else
                 {
@@ -496,6 +526,8 @@ namespace MemoryGame
                 {
                     PendingImage2 = null;
                     PendingImage1 = null;
+                    Card8.Enabled = false;
+                    DupCard8.Enabled = false;
                 }
                 else
                 {
@@ -522,6 +554,8 @@ namespace MemoryGame
                 {
                     PendingImage2 = null;
                     PendingImage1 = null;
+                    Card9.Enabled = false;
+                    DupCard9.Enabled = false;
                 }
                 else
                 {
@@ -548,6 +582,8 @@ namespace MemoryGame
                 {
                     PendingImage2 = null;
                     PendingImage1 = null;
+                    Card9.Enabled = false;
+                    DupCard9.Enabled = false;
                 }
                 else
                 {
@@ -574,6 +610,8 @@ namespace MemoryGame
                 {
                     PendingImage2 = null;
                     PendingImage1 = null;
+                    Card10.Enabled = false;
+                    DupCard10.Enabled = false;
                 }
                 else
                 {
@@ -600,6 +638,8 @@ namespace MemoryGame
                 {
                     PendingImage2 = null;
                     PendingImage1 = null;
+                    Card10.Enabled = false;
+                    DupCard10.Enabled = false;
                 }
                 else
                 {
@@ -626,6 +666,8 @@ namespace MemoryGame
                 {
                     PendingImage2 = null;
                     PendingImage1 = null;
+                    Card11.Enabled = false;
+                    DupCard11.Enabled = false;
                 }
                 else
                 {
@@ -652,6 +694,8 @@ namespace MemoryGame
                 {
                     PendingImage2 = null;
                     PendingImage1 = null;
+                    Card11.Enabled = false;
+                    DupCard11.Enabled = false;
                 }
                 else
                 {
@@ -678,6 +722,8 @@ namespace MemoryGame
                 {
                     PendingImage2 = null;
                     PendingImage1 = null;
+                    Card12.Enabled = false;
+                    DupCard12.Enabled = false;
                 }
                 else
                 {
@@ -704,6 +750,8 @@ namespace MemoryGame
                 {
                     PendingImage2 = null;
                     PendingImage1 = null;
+                    Card12.Enabled = false;
+                    DupCard12.Enabled = false;
                 }
                 else
                 {
