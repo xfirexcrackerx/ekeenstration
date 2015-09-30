@@ -104,7 +104,8 @@ namespace MemoryGame
             {
                 if (PendingImage1.Tag==PendingImage2.Tag)
                 {
-
+                    PendingImage2 = null;
+                    PendingImage1 = null;
                 }
                 else
                 {
@@ -129,7 +130,8 @@ namespace MemoryGame
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
-
+                    PendingImage2 = null;
+                    PendingImage1 = null;
                 }
                 else
                 {
@@ -154,7 +156,8 @@ namespace MemoryGame
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
-
+                    PendingImage2 = null;
+                    PendingImage1 = null;
                 }
                 else
                 {
@@ -179,7 +182,8 @@ namespace MemoryGame
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
-
+                    PendingImage2 = null;
+                    PendingImage1 = null;
                 }
                 else
                 {
@@ -204,7 +208,8 @@ namespace MemoryGame
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
-
+                    PendingImage2 = null;
+                    PendingImage1 = null;
                 }
                 else
                 {
@@ -229,7 +234,8 @@ namespace MemoryGame
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
-
+                    PendingImage2 = null;
+                    PendingImage1 = null;
                 }
                 else
                 {
@@ -254,7 +260,8 @@ namespace MemoryGame
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
-
+                    PendingImage2 = null;
+                    PendingImage1 = null;
                 }
                 else
                 {
@@ -279,7 +286,8 @@ namespace MemoryGame
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
-
+                    PendingImage2 = null;
+                    PendingImage1 = null;
                 }
                 else
                 {
@@ -304,7 +312,8 @@ namespace MemoryGame
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
-
+                    PendingImage2 = null;
+                    PendingImage1 = null;
                 }
                 else
                 {
@@ -329,7 +338,8 @@ namespace MemoryGame
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
-
+                    PendingImage2 = null;
+                    PendingImage1 = null;
                 }
                 else
                 {
@@ -354,7 +364,8 @@ namespace MemoryGame
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
-
+                    PendingImage2 = null;
+                    PendingImage1 = null;
                 }
                 else
                 {
@@ -379,7 +390,8 @@ namespace MemoryGame
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
-
+                    PendingImage2 = null;
+                    PendingImage1 = null;
                 }
                 else
                 {
@@ -404,7 +416,8 @@ namespace MemoryGame
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
-
+                    PendingImage2 = null;
+                    PendingImage1 = null;
                 }
                 else
                 {
@@ -429,7 +442,8 @@ namespace MemoryGame
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
-
+                    PendingImage2 = null;
+                    PendingImage1 = null;
                 }
                 else
                 {
@@ -454,7 +468,8 @@ namespace MemoryGame
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
-
+                    PendingImage2 = null;
+                    PendingImage1 = null;
                 }
                 else
                 {
@@ -479,7 +494,8 @@ namespace MemoryGame
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
-
+                    PendingImage2 = null;
+                    PendingImage1 = null;
                 }
                 else
                 {
@@ -504,7 +520,8 @@ namespace MemoryGame
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
-
+                    PendingImage2 = null;
+                    PendingImage1 = null;
                 }
                 else
                 {
@@ -529,7 +546,8 @@ namespace MemoryGame
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
-
+                    PendingImage2 = null;
+                    PendingImage1 = null;
                 }
                 else
                 {
@@ -554,7 +572,8 @@ namespace MemoryGame
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
-
+                    PendingImage2 = null;
+                    PendingImage1 = null;
                 }
                 else
                 {
@@ -579,7 +598,8 @@ namespace MemoryGame
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
-
+                    PendingImage2 = null;
+                    PendingImage1 = null;
                 }
                 else
                 {
@@ -604,7 +624,8 @@ namespace MemoryGame
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
-
+                    PendingImage2 = null;
+                    PendingImage1 = null;
                 }
                 else
                 {
@@ -629,7 +650,8 @@ namespace MemoryGame
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
-
+                    PendingImage2 = null;
+                    PendingImage1 = null;
                 }
                 else
                 {
@@ -654,7 +676,8 @@ namespace MemoryGame
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
-
+                    PendingImage2 = null;
+                    PendingImage1 = null;
                 }
                 else
                 {
@@ -679,7 +702,8 @@ namespace MemoryGame
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
-
+                    PendingImage2 = null;
+                    PendingImage1 = null;
                 }
                 else
                 {
