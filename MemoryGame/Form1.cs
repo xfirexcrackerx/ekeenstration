@@ -12,7 +12,7 @@ namespace MemoryGame
 {
     public partial class GameWindow : Form
     {
-        Random Location = new Random(); 
+        Random Location = new Random();
         int score = 0;
         List<Point> points = new List<Point>();
         bool again = false;
@@ -100,7 +100,7 @@ namespace MemoryGame
             }
         }
 
-        #region Cards 
+        #region Cards
         // Below we start defining the methods for the different cards 
         private void Card1_Click(object sender, EventArgs e)
         {
