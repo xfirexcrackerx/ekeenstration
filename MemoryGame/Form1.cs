@@ -848,7 +848,7 @@ namespace MemoryGame
 #endregion
         private void timer3_Tick(object sender, EventArgs e)
         {
-            timer3.Stop();
+            timer3.Stop();   
             PendingImage1.Image = Properties.Resources.cover1;
             PendingImage2.Image = Properties.Resources.cover1;
             PendingImage1 = null;
