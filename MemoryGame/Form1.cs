@@ -7,19 +7,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Media;
 namespace MemoryGame
 {
     public partial class GameWindow : Form
     {
-        Random Location = new Random();
+        Random Location = new Random(); 
         int score = 0;
-        List<int> X = new List<int>();
-        List<int> Y = new List<int>();
+        List<Point> points = new List<Point>();
         bool again = false;
         PictureBox PendingImage1;
         PictureBox PendingImage2;
-
+        private void playaudio() // defining the function
+        {
+            SoundPlayer audio = new SoundPlayer(MemoryGame.Properties.Resources.sound); // here WindowsFormsApplication1 is the namespace and Connect is the audio file name
+            audio.Play();
+        }
 
         public GameWindow()
         {
@@ -28,9 +31,18 @@ namespace MemoryGame
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            label1.Text = "5";
             foreach(PictureBox picture in CardsHolder.Controls)
             {
                 picture.Enabled = true;
+                points.Add(picture.Location);
+            }
+            foreach (PictureBox picture in CardsHolder.Controls)
+            {
+                int next = Location.Next(points.Count);
+                Point p = points[next];
+                picture.Location = p;
+                points.Remove(p);
             }
             timer1.Start();
             timer2.Start();
@@ -88,7 +100,8 @@ namespace MemoryGame
             }
         }
 
-        #region Cards
+        #region Cards 
+        // Below we start defining the methods for the different cards 
         private void Card1_Click(object sender, EventArgs e)
         {
             Card1.Image = Properties.Resources.Card1;
@@ -104,11 +117,16 @@ namespace MemoryGame
             {
                 if (PendingImage1.Tag==PendingImage2.Tag)
                 {
+                    playaudio();
                     PendingImage2 = null;
                     PendingImage1 = null;
+                    Card1.Enabled = false;
+                    DupCard1.Enabled = false;
+                ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text) + 10);
                 }
                 else
                 {
+                 ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text) - 10);
                     timer3.Start();
                 }
         
@@ -130,12 +148,17 @@ namespace MemoryGame
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
+                    playaudio();
                     PendingImage2 = null;
                     PendingImage1 = null;
+                    Card1.Enabled = false;
+                    DupCard1.Enabled = false;
+                    ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text) + 10);
                 }
                 else
                 {
                     timer3.Start();
+                    ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text) - 10);
                 }
 
             }
@@ -156,12 +179,17 @@ namespace MemoryGame
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
+                    playaudio();
                     PendingImage2 = null;
                     PendingImage1 = null;
+                    Card2.Enabled = false;
+                    DupCard2.Enabled = false;
+                    ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text) + 10);
                 }
                 else
                 {
                     timer3.Start();
+                    ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text) - 10);
                 }
 
             }
@@ -182,12 +210,17 @@ namespace MemoryGame
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
+                    playaudio();
                     PendingImage2 = null;
                     PendingImage1 = null;
+                    Card2.Enabled = false;
+                    DupCard2.Enabled = false;
+                    ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text) + 10);
                 }
                 else
                 {
                     timer3.Start();
+                    ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text) - 10);
                 }
 
             }
@@ -208,12 +241,17 @@ namespace MemoryGame
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
+                    playaudio();
                     PendingImage2 = null;
                     PendingImage1 = null;
+                    Card3.Enabled = false;
+                    DupCard3.Enabled = false;
+                    ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text) + 10);
                 }
                 else
                 {
                     timer3.Start();
+                    ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text) - 10);
                 }
 
             }
@@ -234,12 +272,17 @@ namespace MemoryGame
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
+                    playaudio();
                     PendingImage2 = null;
                     PendingImage1 = null;
+                    Card3.Enabled = false;
+                    DupCard3.Enabled = false;
+                    ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text) + 10);
                 }
                 else
                 {
                     timer3.Start();
+                    ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text) - 10);
                 }
 
             }
@@ -260,12 +303,17 @@ namespace MemoryGame
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
+                    playaudio();
                     PendingImage2 = null;
                     PendingImage1 = null;
+                    Card4.Enabled = false;
+                    DupCard4.Enabled = false;
+                    ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text) + 10);
                 }
                 else
                 {
                     timer3.Start();
+                    ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text) - 10);
                 }
 
             }
@@ -286,12 +334,17 @@ namespace MemoryGame
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
+                    playaudio();
                     PendingImage2 = null;
                     PendingImage1 = null;
+                    Card4.Enabled = false;
+                    DupCard4.Enabled = false;
+                    ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text) + 10);
                 }
                 else
                 {
                     timer3.Start();
+                    ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text) - 10);
                 }
 
             }
@@ -312,12 +365,17 @@ namespace MemoryGame
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
+                    playaudio();
                     PendingImage2 = null;
                     PendingImage1 = null;
+                    Card5.Enabled = false;
+                    DupCard5.Enabled = false;
+                    ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text) + 10);
                 }
                 else
                 {
                     timer3.Start();
+                    ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text) - 10);
                 }
 
             }
@@ -338,12 +396,17 @@ namespace MemoryGame
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
+                    playaudio();
                     PendingImage2 = null;
                     PendingImage1 = null;
+                    Card5.Enabled = false;
+                    DupCard5.Enabled = false;
+                    ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text) + 10);
                 }
                 else
                 {
                     timer3.Start();
+                    ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text) - 10);
                 }
 
             }
@@ -364,12 +427,17 @@ namespace MemoryGame
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
+                    playaudio();
                     PendingImage2 = null;
                     PendingImage1 = null;
+                    Card6.Enabled = false;
+                    DupCard6.Enabled = false;
+                    ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text) + 10);
                 }
                 else
                 {
                     timer3.Start();
+                    ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text) - 10);
                 }
 
             }
@@ -390,12 +458,17 @@ namespace MemoryGame
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
+                    playaudio();
                     PendingImage2 = null;
                     PendingImage1 = null;
+                    Card6.Enabled = false;
+                    DupCard6.Enabled = false;
+                    ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text) + 10);
                 }
                 else
                 {
                     timer3.Start();
+                    ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text) - 10);
                 }
 
             }
@@ -416,12 +489,17 @@ namespace MemoryGame
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
+                    playaudio();
                     PendingImage2 = null;
                     PendingImage1 = null;
+                    Card7.Enabled = false;
+                    DupCard7.Enabled = false;
+                    ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text) + 10);
                 }
                 else
                 {
                     timer3.Start();
+                    ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text) - 10);
                 }
 
             }
@@ -442,12 +520,17 @@ namespace MemoryGame
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
+                    playaudio();
                     PendingImage2 = null;
                     PendingImage1 = null;
+                    Card7.Enabled = false;
+                    DupCard7.Enabled = false;
+                    ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text) + 10);
                 }
                 else
                 {
                     timer3.Start();
+                    ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text) - 10);
                 }
 
             }
@@ -468,12 +551,17 @@ namespace MemoryGame
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
+                    playaudio();
                     PendingImage2 = null;
                     PendingImage1 = null;
+                    Card8.Enabled = false;
+                    DupCard8.Enabled = false;
+                    ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text) + 10);
                 }
                 else
                 {
                     timer3.Start();
+                    ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text) - 10);
                 }
 
             }
@@ -494,12 +582,17 @@ namespace MemoryGame
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
+                    playaudio();
                     PendingImage2 = null;
                     PendingImage1 = null;
+                    Card8.Enabled = false;
+                    DupCard8.Enabled = false;
+                    ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text) + 10);
                 }
                 else
                 {
                     timer3.Start();
+                    ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text) - 10);
                 }
 
             }
@@ -520,12 +613,17 @@ namespace MemoryGame
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
+                    playaudio();
                     PendingImage2 = null;
                     PendingImage1 = null;
+                    Card9.Enabled = false;
+                    DupCard9.Enabled = false;
+                    ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text) + 10);
                 }
                 else
                 {
                     timer3.Start();
+                    ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text) - 10);
                 }
 
             }
@@ -546,12 +644,17 @@ namespace MemoryGame
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
+                    playaudio();
                     PendingImage2 = null;
                     PendingImage1 = null;
+                    Card9.Enabled = false;
+                    DupCard9.Enabled = false;
+                    ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text) + 10);
                 }
                 else
                 {
                     timer3.Start();
+                    ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text) - 10);
                 }
 
             }
@@ -572,12 +675,17 @@ namespace MemoryGame
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
+                    playaudio();
                     PendingImage2 = null;
                     PendingImage1 = null;
+                    Card10.Enabled = false;
+                    DupCard10.Enabled = false;
+                    ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text) + 10);
                 }
                 else
                 {
                     timer3.Start();
+                    ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text) - 10);
                 }
 
             }
@@ -598,12 +706,17 @@ namespace MemoryGame
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
+                    playaudio();
                     PendingImage2 = null;
                     PendingImage1 = null;
+                    Card10.Enabled = false;
+                    DupCard10.Enabled = false;
+                    ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text) + 10);
                 }
                 else
                 {
                     timer3.Start();
+                    ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text) - 10);
                 }
 
             }
@@ -624,12 +737,17 @@ namespace MemoryGame
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
+                    playaudio();
                     PendingImage2 = null;
                     PendingImage1 = null;
+                    Card11.Enabled = false;
+                    DupCard11.Enabled = false;
+                    ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text) + 10);
                 }
                 else
                 {
                     timer3.Start();
+                    ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text) - 10);
                 }
 
             }
@@ -650,12 +768,17 @@ namespace MemoryGame
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
+                    playaudio();
                     PendingImage2 = null;
                     PendingImage1 = null;
+                    Card11.Enabled = false;
+                    DupCard11.Enabled = false;
+                    ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text) + 10);
                 }
                 else
                 {
                     timer3.Start();
+                    ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text) - 10);
                 }
 
             }
@@ -676,12 +799,17 @@ namespace MemoryGame
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
+                    playaudio();
                     PendingImage2 = null;
                     PendingImage1 = null;
+                    Card12.Enabled = false;
+                    DupCard12.Enabled = false;
+                    ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text) + 10);
                 }
                 else
                 {
                     timer3.Start();
+                    ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text) - 10);
                 }
 
             }
@@ -702,12 +830,17 @@ namespace MemoryGame
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
+                    playaudio();
                     PendingImage2 = null;
                     PendingImage1 = null;
+                    Card12.Enabled = false;
+                    DupCard12.Enabled = false;
+                    ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text) + 10);
                 }
                 else
                 {
                     timer3.Start();
+                    ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text) - 10);
                 }
 
             }
@@ -720,6 +853,12 @@ namespace MemoryGame
             PendingImage2.Image = Properties.Resources.cover1;
             PendingImage1 = null;
             PendingImage2 = null;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form1_Load(sender, e);
+            ScoreCounter.Text = "0";
         }
     }
 }
