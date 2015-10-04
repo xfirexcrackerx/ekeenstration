@@ -18,11 +18,21 @@ namespace MemoryGame
         bool again = false;
         PictureBox PendingImage1;
         PictureBox PendingImage2;
-        private void playaudio() // defining the function
-        {
-            SoundPlayer audio = new SoundPlayer(MemoryGame.Properties.Resources.sound); // here WindowsFormsApplication1 is the namespace and Connect is the audio file name
-            audio.Play();
-        }
+
+        System.Media.SoundPlayer card1 = new System.Media.SoundPlayer("card1audio.wav");
+        System.Media.SoundPlayer card2 = new System.Media.SoundPlayer("card2audio.wav");
+        System.Media.SoundPlayer card3 = new System.Media.SoundPlayer("card3audio.wav");
+        System.Media.SoundPlayer card4 = new System.Media.SoundPlayer("card4audio.wav");
+        System.Media.SoundPlayer card5 = new System.Media.SoundPlayer("card5audio.wav");
+        System.Media.SoundPlayer card6 = new System.Media.SoundPlayer("card6audio.wav");
+        System.Media.SoundPlayer card7 = new System.Media.SoundPlayer("card7audio.wav");
+        System.Media.SoundPlayer card8 = new System.Media.SoundPlayer("card8audio.wav");
+        System.Media.SoundPlayer card9 = new System.Media.SoundPlayer("card9audio.wav");
+        System.Media.SoundPlayer card10 = new System.Media.SoundPlayer("card10audio.wav");
+        System.Media.SoundPlayer card11 = new System.Media.SoundPlayer("card11audio.wav");
+        System.Media.SoundPlayer card12 = new System.Media.SoundPlayer("card12audio.wav");
+
+
 
         public GameWindow()
         {
@@ -109,15 +119,15 @@ namespace MemoryGame
             {
                 PendingImage1 = Card1;
             }
-            else if (PendingImage1!=null&&PendingImage2==null)
+            else if (PendingImage1!=null && PendingImage2==null)
             {
                 PendingImage2 = Card1;
             }
-            if (PendingImage1!=null&&PendingImage2!=null)
+            if (PendingImage1!=null && PendingImage2!=null)
             {
                 if (PendingImage1.Tag==PendingImage2.Tag)
                 {
-                    playaudio();
+                    card1.Play();
                     PendingImage2 = null;
                     PendingImage1 = null;
                     Card1.Enabled = false;
@@ -148,7 +158,7 @@ namespace MemoryGame
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
-                    playaudio();
+                    card1.Play();
                     PendingImage2 = null;
                     PendingImage1 = null;
                     Card1.Enabled = false;
@@ -179,7 +189,7 @@ namespace MemoryGame
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
-                    playaudio();
+                    card2.Play();
                     PendingImage2 = null;
                     PendingImage1 = null;
                     Card2.Enabled = false;
@@ -210,7 +220,7 @@ namespace MemoryGame
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
-                    playaudio();
+                    card2.Play();
                     PendingImage2 = null;
                     PendingImage1 = null;
                     Card2.Enabled = false;
@@ -241,7 +251,7 @@ namespace MemoryGame
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
-                    playaudio();
+                    card3.Play();
                     PendingImage2 = null;
                     PendingImage1 = null;
                     Card3.Enabled = false;
@@ -272,7 +282,7 @@ namespace MemoryGame
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
-                    playaudio();
+                    card3.Play();
                     PendingImage2 = null;
                     PendingImage1 = null;
                     Card3.Enabled = false;
@@ -303,7 +313,7 @@ namespace MemoryGame
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
-                    playaudio();
+                    card4.Play();
                     PendingImage2 = null;
                     PendingImage1 = null;
                     Card4.Enabled = false;
@@ -334,7 +344,7 @@ namespace MemoryGame
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
-                    playaudio();
+                    card4.Play();
                     PendingImage2 = null;
                     PendingImage1 = null;
                     Card4.Enabled = false;
@@ -365,7 +375,7 @@ namespace MemoryGame
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
-                    playaudio();
+                    card5.Play();
                     PendingImage2 = null;
                     PendingImage1 = null;
                     Card5.Enabled = false;
@@ -396,7 +406,7 @@ namespace MemoryGame
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
-                    playaudio();
+                    card5.Play();
                     PendingImage2 = null;
                     PendingImage1 = null;
                     Card5.Enabled = false;
@@ -427,7 +437,7 @@ namespace MemoryGame
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
-                    playaudio();
+                    card6.Play();
                     PendingImage2 = null;
                     PendingImage1 = null;
                     Card6.Enabled = false;
@@ -458,7 +468,7 @@ namespace MemoryGame
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
-                    playaudio();
+                    card6.Play();
                     PendingImage2 = null;
                     PendingImage1 = null;
                     Card6.Enabled = false;
@@ -489,7 +499,7 @@ namespace MemoryGame
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
-                    playaudio();
+                    card7.Play();
                     PendingImage2 = null;
                     PendingImage1 = null;
                     Card7.Enabled = false;
@@ -520,7 +530,7 @@ namespace MemoryGame
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
-                    playaudio();
+                    card7.Play();
                     PendingImage2 = null;
                     PendingImage1 = null;
                     Card7.Enabled = false;
@@ -551,7 +561,7 @@ namespace MemoryGame
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
-                    playaudio();
+                    card8.Play();
                     PendingImage2 = null;
                     PendingImage1 = null;
                     Card8.Enabled = false;
@@ -582,7 +592,7 @@ namespace MemoryGame
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
-                    playaudio();
+                    card8.Play();
                     PendingImage2 = null;
                     PendingImage1 = null;
                     Card8.Enabled = false;
@@ -613,7 +623,7 @@ namespace MemoryGame
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
-                    playaudio();
+                    card9.Play();
                     PendingImage2 = null;
                     PendingImage1 = null;
                     Card9.Enabled = false;
@@ -644,7 +654,7 @@ namespace MemoryGame
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
-                    playaudio();
+                    card9.Play();
                     PendingImage2 = null;
                     PendingImage1 = null;
                     Card9.Enabled = false;
@@ -675,7 +685,7 @@ namespace MemoryGame
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
-                    playaudio();
+                    card10.Play();
                     PendingImage2 = null;
                     PendingImage1 = null;
                     Card10.Enabled = false;
@@ -706,7 +716,7 @@ namespace MemoryGame
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
-                    playaudio();
+                    card10.Play();
                     PendingImage2 = null;
                     PendingImage1 = null;
                     Card10.Enabled = false;
@@ -737,7 +747,7 @@ namespace MemoryGame
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
-                    playaudio();
+                    card11.Play();
                     PendingImage2 = null;
                     PendingImage1 = null;
                     Card11.Enabled = false;
@@ -768,7 +778,7 @@ namespace MemoryGame
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
-                    playaudio();
+                    card11.Play();
                     PendingImage2 = null;
                     PendingImage1 = null;
                     Card11.Enabled = false;
@@ -799,7 +809,7 @@ namespace MemoryGame
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
-                    playaudio();
+                    card12.Play();
                     PendingImage2 = null;
                     PendingImage1 = null;
                     Card12.Enabled = false;
@@ -830,7 +840,7 @@ namespace MemoryGame
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
-                    playaudio();
+                    card12.Play();
                     PendingImage2 = null;
                     PendingImage1 = null;
                     Card12.Enabled = false;
