@@ -12,9 +12,14 @@ namespace MemoryGame
 {
     public partial class GameWindow : Form
     {
+        private void Form1_Click(object sender, System.EventArgs e)
+        {
+            this.BackColor = System.Drawing.Color.DarkBlue;
+        }
         Random Location = new Random();
         int score = 0;
         List<Point> points = new List<Point>();
+        int zero = 0;
         bool again = false;
         PictureBox PendingImage1;
         PictureBox PendingImage2;
@@ -134,7 +139,12 @@ namespace MemoryGame
                 }
                 else
                 {
-                 ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text)-5);
+                    zero = Convert.ToInt32(ScoreCounter.Text);
+                    if (zero > 0)
+                    {
+                        ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text) - 5);   
+                    }
+      
                     timer3.Start();
                 }
         
@@ -166,7 +176,11 @@ namespace MemoryGame
                 else
                 {
                     timer3.Start();
-                    ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text)-5);
+                    zero = Convert.ToInt32(ScoreCounter.Text);
+                    if (zero > 0)
+                    {
+                        ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text) - 5);
+                    }
                 }
 
             }
@@ -197,7 +211,11 @@ namespace MemoryGame
                 else
                 {
                     timer3.Start();
-                    ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text)-5);
+                    zero = Convert.ToInt32(ScoreCounter.Text);
+                    if (zero > 0)
+                    {
+                        ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text) - 5);
+                    }
                 }
 
             }
@@ -228,7 +246,11 @@ namespace MemoryGame
                 else
                 {
                     timer3.Start();
-                    ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text)-5);
+                    zero = Convert.ToInt32(ScoreCounter.Text);
+                    if (zero > 0)
+                    {
+                        ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text) - 5);
+                    }
                 }
 
             }
@@ -259,7 +281,11 @@ namespace MemoryGame
                 else
                 {
                     timer3.Start();
-                    ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text)-5);
+                    zero = Convert.ToInt32(ScoreCounter.Text);
+                    if (zero > 0)
+                    {
+                        ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text) - 5);
+                    }
                 }
 
             }
@@ -290,7 +316,11 @@ namespace MemoryGame
                 else
                 {
                     timer3.Start();
-                    ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text)-5);
+                    zero = Convert.ToInt32(ScoreCounter.Text);
+                    if (zero > 0)
+                    {
+                        ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text) - 5);
+                    }
                 }
 
             }
@@ -321,7 +351,11 @@ namespace MemoryGame
                 else
                 {
                     timer3.Start();
-                    ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text)-5);
+                    zero = Convert.ToInt32(ScoreCounter.Text);
+                    if (zero > 0)
+                    {
+                        ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text) - 5);
+                    }
                 }
 
             }
@@ -352,7 +386,11 @@ namespace MemoryGame
                 else
                 {
                     timer3.Start();
-                    ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text)-5);
+                    zero = Convert.ToInt32(ScoreCounter.Text);
+                    if (zero > 0)
+                    {
+                        ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text) - 5);
+                    }
                 }
 
             }
@@ -383,7 +421,11 @@ namespace MemoryGame
                 else
                 {
                     timer3.Start();
-                    ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text)-5);
+                    zero = Convert.ToInt32(ScoreCounter.Text);
+                    if (zero > 0)
+                    {
+                        ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text) - 5);
+                    }
                 }
 
             }
@@ -414,7 +456,11 @@ namespace MemoryGame
                 else
                 {
                     timer3.Start();
-                    ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text)-5);
+                    zero = Convert.ToInt32(ScoreCounter.Text);
+                    if (zero > 0)
+                    {
+                        ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text) - 5);
+                    }
                 }
 
             }
@@ -445,7 +491,11 @@ namespace MemoryGame
                 else
                 {
                     timer3.Start();
-                    ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text)-5);
+                    zero = Convert.ToInt32(ScoreCounter.Text);
+                    if (zero > 0)
+                    {
+                        ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text) - 5);
+                    }
                 }
 
             }
@@ -476,7 +526,11 @@ namespace MemoryGame
                 else
                 {
                     timer3.Start();
-                    ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text)-5);
+                    zero = Convert.ToInt32(ScoreCounter.Text);
+                    if (zero > 0)
+                    {
+                        ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text) - 5);
+                    }
                 }
 
             }
@@ -507,7 +561,11 @@ namespace MemoryGame
                 else
                 {
                     timer3.Start();
-                    ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text)-5);
+                    zero = Convert.ToInt32(ScoreCounter.Text);
+                    if (zero > 0)
+                    {
+                        ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text) - 5);
+                    }
                 }
 
             }
@@ -538,7 +596,11 @@ namespace MemoryGame
                 else
                 {
                     timer3.Start();
-                    ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text)-5);
+                    zero = Convert.ToInt32(ScoreCounter.Text);
+                    if (zero > 0)
+                    {
+                        ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text) - 5);
+                    }
                 }
 
             }
@@ -569,7 +631,11 @@ namespace MemoryGame
                 else
                 {
                     timer3.Start();
-                    ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text)-5);
+                    zero = Convert.ToInt32(ScoreCounter.Text);
+                    if (zero > 0)
+                    {
+                        ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text) - 5);
+                    }
                 }
 
             }
@@ -600,7 +666,11 @@ namespace MemoryGame
                 else
                 {
                     timer3.Start();
-                    ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text)-5);
+                    zero = Convert.ToInt32(ScoreCounter.Text);
+                    if (zero > 0)
+                    {
+                        ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text) - 5);
+                    }
                 }
 
             }
@@ -631,7 +701,11 @@ namespace MemoryGame
                 else
                 {
                     timer3.Start();
-                    ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text)-5);
+                    zero = Convert.ToInt32(ScoreCounter.Text);
+                    if (zero > 0)
+                    {
+                        ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text) - 5);
+                    }
                 }
 
             }
@@ -662,7 +736,11 @@ namespace MemoryGame
                 else
                 {
                     timer3.Start();
-                    ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text)-5);
+                    zero = Convert.ToInt32(ScoreCounter.Text);
+                    if (zero > 0)
+                    {
+                        ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text) - 5);
+                    }
                 }
 
             }
@@ -693,7 +771,11 @@ namespace MemoryGame
                 else
                 {
                     timer3.Start();
-                    ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text)-5);
+                    zero = Convert.ToInt32(ScoreCounter.Text);
+                    if (zero > 0)
+                    {
+                        ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text) - 5);
+                    }
                 }
 
             }
@@ -724,7 +806,11 @@ namespace MemoryGame
                 else
                 {
                     timer3.Start();
-                    ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text)-5);
+                    zero = Convert.ToInt32(ScoreCounter.Text);
+                    if (zero > 0)
+                    {
+                        ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text) - 5);
+                    }
                 }
 
             }
@@ -755,7 +841,11 @@ namespace MemoryGame
                 else
                 {
                     timer3.Start();
-                    ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text)-5);
+                    zero = Convert.ToInt32(ScoreCounter.Text);
+                    if (zero > 0)
+                    {
+                        ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text) - 5);
+                    }
                 }
 
             }
@@ -786,7 +876,11 @@ namespace MemoryGame
                 else
                 {
                     timer3.Start();
-                    ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text)-5);
+                    zero = Convert.ToInt32(ScoreCounter.Text);
+                    if (zero > 0)
+                    {
+                        ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text) - 5);
+                    }
                 }
 
             }
@@ -817,7 +911,11 @@ namespace MemoryGame
                 else
                 {
                     timer3.Start();
-                    ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text)-5);
+                    zero = Convert.ToInt32(ScoreCounter.Text);
+                    if (zero > 0)
+                    {
+                        ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text) - 5);
+                    }
                 }
 
             }
@@ -848,7 +946,11 @@ namespace MemoryGame
                 else
                 {
                     timer3.Start();
-                    ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text)-5);
+                    zero = Convert.ToInt32(ScoreCounter.Text);
+                    if (zero > 0)
+                    {
+                        ScoreCounter.Text = Convert.ToString(Convert.ToInt32(ScoreCounter.Text) - 5);
+                    }
                 }
 
             }
